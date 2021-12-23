@@ -1,0 +1,231 @@
+#### 剪枝
+
+排除那些不符合条件的分支。提高程序的运行效率。
+
+![ds_2](https://pic.leetcode-cn.com/1637716088-InPRKu-20211118152021.png)
+
+#### 回溯：
+
+一层层递归，尝试搜素答案，
+
+- 找到答案：返回结果，尝试其他的分支
+- 找不到答案：返回上一层，尝试其他分支
+
+回溯模版：
+
+* js
+
+```js
+result = [];
+function backtrack (path, list) {
+    if (满足条件) {
+        result.push(path);
+        return
+    }
+    
+    for () {
+        // 单层逻辑
+        backtrack (path, list)
+        // 撤销选择 重置状态
+    }
+}
+```
+
+**回溯四部曲：**
+
+- 回溯参数
+- 终止条件
+- 单层递归逻辑
+- 选择其他分支（撤销选择 重置状态）
+
+#### [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) （medium）
+
+![ds_52](https://pic.leetcode-cn.com/1637716088-UoabCc-20211118152022.png)
+
+#### 方法1:暴力
+
+复杂度分析：时间复杂度`O(2^2n*n)`，字符串的长度为`2n`，每个位置有两种选择，选择左或者右括号，验证字符串是否有效复杂度`O(n)`，剪枝之后会优化，最坏的情况是`O(2^2n*n)`。空间复杂度`O(n)`,递归次数最多2n
+
+##### 方法2.递归dfs
+
+- 思路：采用递归，终止条件是字符串的长度等于`2n`，递归函数传入构建的字符串，左右括号剩余多少，每个位置有两种选择，选择左或者右括号，这里可以进行剪枝优化，只有右括号的保有数量大于左括号的保有数量，才能选右括号，否则肯定不能构成有效括号
+
+Js:
+
+* js
+
+```js
+const generateParenthesis = (n) => {
+    const res = []; // 输出的结果数组
+
+    const generate = (str, left, right) => {
+        if (str.length == 2 * n) { // 字符串构建完成
+            res.push(str);           // 将字符串加入res
+            return;                  // 结束当前递归（结束当前搜索分支）
+        }
+        if (left > 0) {            // 只要左括号有剩，可以选它，继续递归做选择
+            generate(str + '(', left - 1, right);
+        }
+        if (right > left) {        // 右括号的保有数量大于左括号的保有数量，才能选右括号
+            generate(str + ')', left, right - 1);
+        }
+    };
+
+    generate('', n, n); // 递归的入口，初始字符串是空字符串，初始括号数量都是n
+    return res;
+};
+```
+
+Java:
+
+* java
+
+```java
+class Solution {
+    List<String> res = new ArrayList<>();
+    public List<String> generateParenthesis(int n) {
+        generate(n, n, "");
+        return res;
+    }
+
+    private void generate(int left, int right, String curStr) {
+        if (left == 0 && right == 0) {
+            res.add(curStr);
+            return;
+        }
+
+        if (left > 0) {
+            generate(left - 1, right, curStr + "(");
+        }
+        if (right > left) {
+            generate(left, right - 1, curStr + ")");
+        }
+    }
+}
+```
+
+##### 方法3.回溯
+
+- 思路：当左括号剩下的多，说明字符串中的左括号数量少于右括号，不合法，对字符串尝试添加左括号，然后回溯，尝试添加右括号，然后尝试回溯
+
+Js:
+
+* javascript
+
+```javascript
+var generateParenthesis = function(n) {
+    if (n == 0) return []
+    const res = []
+    let track = []
+    backtrack(n, n, track, res)
+    return res
+    function backtrack(left, right, track, res) {
+        // 数量小于0，不合法
+        if (left < 0 || right < 0) return
+        // 若左括号剩下的多，说明不合法
+        if (right < left) return
+        // 所有括号用完，得到合法组合
+        if (left == 0 && right == 0) {
+            res.push(track.join(''))
+            return
+        }
+
+        // 尝试添加左括号 
+        track.push('(')
+      	//这个地方一定要注意 需要拷贝一份track，也就是采用[...track]， 不然会影响其他分支
+        backtrack(left - 1, right, [...track], res)
+        track.pop()
+
+        // 尝试添加右括号
+        track.push(')')
+        backtrack(left, right - 1, [...track], res)
+        track.pop()
+    }
+};
+
+
+```
+
+Java:
+
+* java
+
+```java
+class Solution {
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<String>();
+        backtrack(res, new StringBuilder(), 0, 0, n);
+        return res;
+    }
+
+    public void backtrack(List<String> res, StringBuilder cur, int left, int right, int max) {
+        if (cur.length() == max * 2) {
+            res.add(cur.toString());
+            return;
+        }
+        if (left < max) {
+            cur.append('(');
+            backtrack(res, cur, left + 1, right, max);
+            cur.deleteCharAt(cur.length() - 1);
+        }
+        if (right < left) {
+            cur.append(')');
+            backtrack(res, cur, left, right + 1, max);
+            cur.deleteCharAt(cur.length() - 1);
+        }
+    }
+}
+
+```
+
+#### 视频教程（高效学习）:[点击学习](https://xiaochen1024.com/series/6196129fc1553b002e57bef5/6196208ec1553b002e57bef6)
+
+#### 目录：
+
+[1.开篇介绍](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18)
+
+[2.时间空间复杂度](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/619635dcc1553b002e57bf12)
+
+[3.动态规划](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/61963bcdc1553b002e57bf13)
+
+[4.贪心](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/61963ce5c1553b002e57bf14)
+
+[5.二分查找](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/61963e36c1553b002e57bf15)
+
+[6.深度优先&广度优先](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/61964050c1553b002e57bf16)
+
+[7.双指针](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/619640cec1553b002e57bf17)
+
+[8.滑动窗口](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/61964164c1553b002e57bf18)
+
+[9.位运算](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196420ac1553b002e57bf19)
+
+[10.递归&分治](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/61964285c1553b002e57bf1a)
+
+[11剪枝&回溯](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/61964326c1553b002e57bf1b)
+
+[12.堆](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/619643e1c1553b002e57bf1c)
+
+[13.单调栈](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196ce3ac1553b002e57bf1f)
+
+[14.排序算法](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196ced6c1553b002e57bf20)
+
+[15.链表](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196cf7fc1553b002e57bf21)
+
+[16.set&map](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196cfc6c1553b002e57bf22)
+
+[17.栈](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d002c1553b002e57bf23)
+
+[18.队列](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d065c1553b002e57bf24)
+
+[19.数组](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d0f9c1553b002e57bf25)
+
+[20.字符串](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d19cc1553b002e57bf26)
+
+[21.树](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d279c1553b002e57bf27)
+
+[22.字典树](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d2c4c1553b002e57bf28)
+
+[23.并查集](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d34dc1553b002e57bf29)
+
+[24.其他类型题](https://xiaochen1024.com/courseware/60b4f11ab1aa91002eb53b18/6196d3adc1553b002e57bf2a)
