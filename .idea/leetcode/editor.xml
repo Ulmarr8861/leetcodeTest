@@ -19,7 +19,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[10]正则表达式匹配.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[10]正则表达式匹配.java" />
-              <option name="questionId" value="10" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -28,7 +27,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[11]盛最多水的容器.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[11]盛最多水的容器.java" />
-              <option name="questionId" value="11" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -37,7 +35,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[15]三数之和.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[15]三数之和.java" />
-              <option name="questionId" value="15" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -46,7 +43,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[17]电话号码的字母组合.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[17]电话号码的字母组合.java" />
-              <option name="questionId" value="17" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -55,7 +51,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[19]删除链表的倒数第 N 个结点.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[19]删除链表的倒数第 N 个结点.java" />
-              <option name="questionId" value="19" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -64,7 +59,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[1]两数之和.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[1]两数之和.java" />
-              <option name="questionId" value="1" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -73,7 +67,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[20]有效的括号.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[20]有效的括号.java" />
-              <option name="questionId" value="20" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -82,7 +75,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[21]合并两个有序链表.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[21]合并两个有序链表.java" />
-              <option name="questionId" value="21" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -91,7 +83,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[22]括号生成.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[22]括号生成.java" />
-              <option name="questionId" value="22" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -100,7 +91,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[23]合并K个升序链表.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[23]合并K个升序链表.java" />
-              <option name="questionId" value="23" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -109,7 +99,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[2]两数相加.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[2]两数相加.java" />
-              <option name="questionId" value="2" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -118,7 +107,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[31]下一个排列.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[31]下一个排列.java" />
-              <option name="questionId" value="31" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -127,7 +115,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[32]最长有效括号.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[32]最长有效括号.java" />
-              <option name="questionId" value="32" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -136,7 +123,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[3]无重复字符的最长子串.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[3]无重复字符的最长子串.java" />
-              <option name="questionId" value="3" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -145,7 +131,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[4]寻找两个正序数组的中位数.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[4]寻找两个正序数组的中位数.java" />
-              <option name="questionId" value="4" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -154,7 +139,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[5]最长回文子串.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[5]最长回文子串.java" />
-              <option name="questionId" value="5" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -163,7 +147,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[6]Z 字形变换.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[6]Z 字形变换.java" />
-              <option name="questionId" value="6" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -172,7 +155,28 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/doc/content/[7]整数反转.md" />
               <option name="path" value="$PROJECT_DIR$/../leetcode/leetcode/editor/cn/[7]整数反转.java" />
-              <option name="questionId" value="7" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test01/src/editor/leetcode/editor/cn/[32]最长有效括号.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/test01/src/leetcode/editor/cn/doc/content/[32]最长有效括号.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com32" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/test01/src/leetcode/editor/cn/[32]最长有效括号.java" />
+              <option name="titleSlug" value="longest-valid-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test01/src/leetcode/editor/cn/[32]最长有效括号.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/test01/src/leetcode/editor/cn/doc/content/[32]最长有效括号.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com32" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/test01/src/leetcode/editor/cn/[32]最长有效括号.java" />
+              <option name="titleSlug" value="longest-valid-parentheses" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -201,10 +205,10 @@
         <entry key="$PROJECT_DIR$/../../leetcode2/leetcode/editor/cn/[32]最长有效括号.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/../../leetcode2/leetcode/editor/cn/doc/content/[32]最长有效括号.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/test01/src/leetcode/editor/cn/doc/content/[32]最长有效括号.md" />
               <option name="frontendQuestionId" value="leetcode-cn.com32" />
               <option name="host" value="leetcode-cn.com" />
-              <option name="path" value="$PROJECT_DIR$/../../leetcode2/leetcode/editor/cn/[32]最长有效括号.java" />
+              <option name="path" value="$PROJECT_DIR$/test01/src/leetcode/editor/cn/[32]最长有效括号.java" />
               <option name="titleSlug" value="longest-valid-parentheses" />
             </LeetcodeEditor>
           </value>
