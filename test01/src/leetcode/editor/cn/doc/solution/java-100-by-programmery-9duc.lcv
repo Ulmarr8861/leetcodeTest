@@ -1,0 +1,56 @@
+### 解题思路
+
+找到一个**有序数对**`(smallEle, bigEle)`，它们的下标分别为`k`和`flag`。
+这个有序数对要满足：
+- `smallEle`的下标`k`尽量靠右。
+- `bigEle`是`smallEle`后面比`smallEle`大的最小的数。
+
+找到后将`smallEle`和`bigEle`换位置，并且把`k`后面的元素全部升序排列。
+如果没找到，将所有元素升序排列。
+
+### 代码
+
+* java
+
+```java
+class Solution {
+    public void nextPermutation(int[] nums) {
+        if(nums.length == 1){
+            return;
+        }
+
+        int n = nums.length;
+        int flag = -1;
+        int k = -1;
+        for(int i = n - 1; i >= 0; i--){
+            for(int j = i+1; j <= n - 1; j++){
+                int res = Integer.MAX_VALUE;
+                if(nums[i] < nums[j] && nums[j] < res){
+                    k = i;
+                    flag = j;
+                }
+            }
+            if(flag != -1){
+                break;
+            }
+        }
+        if(flag != -1){
+            int temp1 = nums[k];
+            nums[k] = nums[flag];
+            nums[flag] = temp1;
+        }
+
+        // 把k后面的元素升序
+        int i = flag == -1? 0 : k + 1;
+        int j = n - 1;
+        while(i < j){
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+            i++;
+            j--;
+        }
+    }
+}
+```
+
