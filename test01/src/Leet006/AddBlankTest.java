@@ -1,4 +1,4 @@
-package leet006;
+package Leet006;
 
 public class AddBlankTest {
     public static void main(String[] args) {

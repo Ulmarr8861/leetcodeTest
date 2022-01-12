@@ -158,6 +158,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[1]两数之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[1]两数之和.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[1]两数之和.java" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[2]两数相加.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[2]两数相加.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com2" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[2]两数相加.java" />
+              <option name="titleSlug" value="add-two-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[33]搜索旋转排序数组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[33]搜索旋转排序数组.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com33" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[33]搜索旋转排序数组.java" />
+              <option name="titleSlug" value="search-in-rotated-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/test01/src/editor/leetcode/editor/cn/[32]最长有效括号.java">
           <value>
             <LeetcodeEditor>
@@ -177,6 +210,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/test01/src/leetcode/editor/cn/[32]最长有效括号.java" />
               <option name="titleSlug" value="longest-valid-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test01/src/leetcode/editor/cn/[33]搜索旋转排序数组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[33]搜索旋转排序数组.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com33" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[33]搜索旋转排序数组.java" />
+              <option name="titleSlug" value="search-in-rotated-sorted-array" />
             </LeetcodeEditor>
           </value>
         </entry>

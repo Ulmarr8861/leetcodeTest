@@ -1,9 +1,9 @@
 package leet005;
 
-public class leet005 {
+public class Leet005 {
     public static void main(String[] args) {
         String s = "abbbbad";
-        leet005 l5 = new leet005();
+        Leet005 l5 = new Leet005();
         String result = l5.longestPalindrome2(s);
         System.out.println(result);
 

@@ -1,4 +1,4 @@
-package leet006;
+package Leet006;
 
 import java.util.ArrayList;
 import java.util.List;
