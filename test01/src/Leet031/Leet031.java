@@ -15,7 +15,6 @@ public class Leet031 {
         int n = nums.length;
         int flag = -1;
         int k = -1;
-        int tmp = Integer.MAX_VALUE;
         for (int i = n - 1; i >= 0; i--) {
             for (int j = i + 1; j <= n - 1; j++) {
                 int res = Integer.MAX_VALUE;

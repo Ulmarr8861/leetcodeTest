@@ -14,7 +14,7 @@ public class Leet015 {
     public List<List<Integer>> threeSum3(int[] nums) {
         int n = nums.length;
         Arrays.sort(nums);
-        List<List<Integer>> ans = new ArrayList<List<Integer>>();
+        List<List<Integer>> ans = new ArrayList<>();
         // 枚举 a
         for (int first = 0; first < n; ++first) {
             // 需要和上一次枚举的数不相同
@@ -40,7 +40,7 @@ public class Leet015 {
                     break;
                 }
                 if (nums[second] + nums[third] == target) {
-                    List<Integer> list = new ArrayList<Integer>();
+                    List<Integer> list = new ArrayList<>();
                     list.add(nums[first]);
                     list.add(nums[second]);
                     list.add(nums[third]);
@@ -90,6 +90,8 @@ public class Leet015 {
         }
         return ans;
     }
+
+    //需要调试
     public List<List<Integer>> threeSum(int[] nums) {
         List<Integer> list = new ArrayList<>();
         List<List<Integer>> ans = new ArrayList<>();

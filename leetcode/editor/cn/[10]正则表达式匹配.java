@@ -64,16 +64,13 @@
 class Solution {
     public boolean isMatch(String s, String p) {
         if (p == null) {
-            if (s == null) {
-                return true;
-            } else {
-                return false;
-            }
+            return s == null;
         }
 
-        if (s == null && p.length() == 1) {
-            return false;
+        if (s == null) {
+            return p.length() <= 0;
         }
+
 
         int m = s.length() + 1;
         int n = p.length() + 1;

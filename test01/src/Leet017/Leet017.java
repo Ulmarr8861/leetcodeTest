@@ -14,7 +14,7 @@ public class Leet017 {
 
     }
         public List<String> letterCombinations(String digits) {
-            List<String> combinations = new ArrayList<String>();
+            List<String> combinations = new ArrayList<>();
             if (digits.length() == 0) {
                 return combinations;
             }
@@ -42,7 +42,7 @@ public class Leet017 {
                 for (int i = 0; i < lettersCount; i++) {
                     combination.append(letters.charAt(i));
                     backtrack(combinations, phoneMap, digits, index + 1, combination);
-                            combination.deleteCharAt(index);
+                    combination.deleteCharAt(index);
                 }
             }
         }

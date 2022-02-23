@@ -46,7 +46,7 @@ import java.util.Map;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> letterCombinations(String digits) {
-        List<String> combinations = new ArrayList<String>();
+        List<String> combinations = new ArrayList<>();
         if (digits.length() == 0) {
             return combinations;
         }
