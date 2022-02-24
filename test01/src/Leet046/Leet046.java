@@ -19,17 +19,16 @@ public class Leet046 {
     }
 
     private void dfs(int[] nums, int u) {
-        if (u == nums.length) {
-
+        if (path.size() == nums.length) {
             result.add(new ArrayList<>(path));
             return;
         }
         for (int i = 0; i < nums.length; i++) {
             if (!path.contains(nums[i])) {
                 path.add(nums[i]);
+                dfs(nums, ++u);
+                path.remove(path.size() - 1);
             }
-            dfs(nums, ++u);
-            path.remove(path.size() - 1);
         }
     }
 }
