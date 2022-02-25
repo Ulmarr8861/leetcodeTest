@@ -176,7 +176,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[31]下一个排列.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[31]下一个排列.java" />
-              <option name="questionId" value="31" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -185,7 +184,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[33]搜索旋转排序数组.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[33]搜索旋转排序数组.java" />
-              <option name="questionId" value="33" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -194,7 +192,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[34]在排序数组中查找元素的第一个和最后一个位置.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[34]在排序数组中查找元素的第一个和最后一个位置.java" />
-              <option name="questionId" value="34" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -203,7 +200,6 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[39]组合总和.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[39]组合总和.java" />
-              <option name="questionId" value="39" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -212,7 +208,50 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[46]全排列.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[46]全排列.java" />
-              <option name="questionId" value="46" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[48]旋转图像.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[48]旋转图像.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com48" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[48]旋转图像.java" />
+              <option name="titleSlug" value="rotate-image" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[49]字母异位词分组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[49]字母异位词分组.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com49" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[49]字母异位词分组.java" />
+              <option name="titleSlug" value="group-anagrams" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[53]最大子数组和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[53]最大子数组和.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com53" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[53]最大子数组和.java" />
+              <option name="titleSlug" value="maximum-subarray" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[55]跳跃游戏.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[55]跳跃游戏.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com55" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[55]跳跃游戏.java" />
+              <option name="titleSlug" value="jump-game" />
             </LeetcodeEditor>
           </value>
         </entry>
