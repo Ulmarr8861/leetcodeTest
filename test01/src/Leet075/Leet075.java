@@ -42,4 +42,25 @@ public class Leet075 {
             }
         }
     }
+
+    public void sortColor3(int[] nums) {
+        int index = 0;
+        int tmp = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                tmp = nums[i];
+                nums[i] = nums[index];
+                nums[index] = tmp;
+                index++;
+            }
+        }
+        for (int j = index; j < nums.length; j++) {
+            if (nums[j] == 0) {
+                tmp = nums[j];
+                nums[j] = nums[index];
+                nums[index] = tmp;
+                index++;
+            }
+        }
+    }
 }
