@@ -159,10 +159,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[101]对称二叉树.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com101" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[101]对称二叉树.java" />
-              <option name="titleSlug" value="symmetric-tree" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -170,10 +167,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[102]二叉树的层序遍历.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com102" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[102]二叉树的层序遍历.java" />
-              <option name="titleSlug" value="binary-tree-level-order-traversal" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -181,10 +175,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[104]二叉树的最大深度.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com104" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[104]二叉树的最大深度.java" />
-              <option name="titleSlug" value="maximum-depth-of-binary-tree" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -192,10 +183,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[105]从前序与中序遍历序列构造二叉树.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com105" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[105]从前序与中序遍历序列构造二叉树.java" />
-              <option name="titleSlug" value="construct-binary-tree-from-preorder-and-inorder-traversal" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -203,10 +191,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[114]二叉树展开为链表.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com114" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[114]二叉树展开为链表.java" />
-              <option name="titleSlug" value="flatten-binary-tree-to-linked-list" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -214,10 +199,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[121]买卖股票的最佳时机.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com121" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[121]买卖股票的最佳时机.java" />
-              <option name="titleSlug" value="best-time-to-buy-and-sell-stock" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -225,10 +207,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[128]最长连续序列.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com128" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[128]最长连续序列.java" />
-              <option name="titleSlug" value="longest-consecutive-sequence" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -236,10 +215,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[136]只出现一次的数字.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com136" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[136]只出现一次的数字.java" />
-              <option name="titleSlug" value="single-number" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -247,10 +223,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[139]单词拆分.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com139" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[139]单词拆分.java" />
-              <option name="titleSlug" value="word-break" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -258,10 +231,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[141]环形链表.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com141" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[141]环形链表.java" />
-              <option name="titleSlug" value="linked-list-cycle" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -269,10 +239,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[142]环形链表 II.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com142" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[142]环形链表 II.java" />
-              <option name="titleSlug" value="linked-list-cycle-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -280,10 +247,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[146]LRU 缓存.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com146" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[146]LRU 缓存.java" />
-              <option name="titleSlug" value="lru-cache" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -291,10 +255,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[148]排序链表.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com148" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[148]排序链表.java" />
-              <option name="titleSlug" value="sort-list" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -311,6 +272,7 @@
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[2]两数相加.md" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[2]两数相加.java" />
+              <option name="questionId" value="2" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -350,10 +312,7 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/[41]缺失的第一个正数.md" />
-              <option name="frontendQuestionId" value="leetcode-cn.com41" />
-              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/[41]缺失的第一个正数.java" />
-              <option name="titleSlug" value="first-missing-positive" />
             </LeetcodeEditor>
           </value>
         </entry>
