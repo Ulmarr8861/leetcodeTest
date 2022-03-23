@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Classification/Classification.iml" filepath="$PROJECT_DIR$/Classification/Classification.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyJavaTest.iml" filepath="$PROJECT_DIR$/MyJavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huaweiCode/huaweiCode.iml" filepath="$PROJECT_DIR$/huaweiCode/huaweiCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/newcoder/newcoder.iml" filepath="$PROJECT_DIR$/newcoder/newcoder.iml" />
     </modules>
   </component>
