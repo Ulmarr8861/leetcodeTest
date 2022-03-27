@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyJavaTest.iml" filepath="$PROJECT_DIR$/MyJavaTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/huaweiCode/huaweiCode.iml" filepath="$PROJECT_DIR$/huaweiCode/huaweiCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/newcoder/newcoder.iml" filepath="$PROJECT_DIR$/newcoder/newcoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sortMethod/sortMethod.iml" filepath="$PROJECT_DIR$/sortMethod/sortMethod.iml" />
     </modules>
   </component>
 </project>
