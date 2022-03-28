@@ -48,9 +48,47 @@ public class 快速排序 {
     }
 
 
-    public static void main(String[] args){
+    public static void quickSort2(int[] arr,int left,int right) {
+        int l = left, r = right;
+        int tmp = 0;
+        int pivot = arr[(left + right) / 2];
+        while (l < r) {
+            while (arr[l] < pivot) {
+                l++;
+            }
+            while (arr[r] > pivot) {
+                r--;
+            }
+            if (l >= r) {
+                break;
+            }
+            tmp = arr[l];
+            arr[l] = arr[r];
+            arr[r] = tmp;
+
+            if (arr[l] == pivot) {
+                r--;
+            }
+            if (arr[r] == pivot) {
+                l++;
+            }
+        }
+
+        if (l == r) {
+            l++;
+            r--;
+        }
+        if (left < r) {
+            quickSort(arr, left, r);
+        }
+        if (right > l) {
+            quickSort(arr, l, right);
+        }
+    }
+
+        public static void main(String[] args){
         int[] arr = {10,7,2,4,7,62,3,4,2,1,8,9,19};
-        quickSort(arr, 0, arr.length-1);
+        quickSort2(arr, 0, arr.length-1);
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
