@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Classification/Classification.iml" filepath="$PROJECT_DIR$/Classification/Classification.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyJavaTest.iml" filepath="$PROJECT_DIR$/MyJavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acwing/acwing.iml" filepath="$PROJECT_DIR$/acwing/acwing.iml" />
       <module fileurl="file://$PROJECT_DIR$/huaweiCode/huaweiCode.iml" filepath="$PROJECT_DIR$/huaweiCode/huaweiCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/newcoder/newcoder.iml" filepath="$PROJECT_DIR$/newcoder/newcoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/sortMethod/sortMethod.iml" filepath="$PROJECT_DIR$/sortMethod/sortMethod.iml" />
