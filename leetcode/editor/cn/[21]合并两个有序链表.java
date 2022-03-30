@@ -50,24 +50,44 @@
  * }
  */
 class Solution {
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode prehead = new ListNode(-1);
+    public ListNode mergeLists(ListNode[] lists) {
 
-        ListNode prev = prehead;
-        while (l1 != null && l2 != null) {
-            if (l1.val <= l2.val) {
-                prev.next = l1;
+        if (lists == null || lists.length == 0) {
+            return null;
+        }
+        return merge(lists, 0, lists.length - 1);
+
+
+    }
+
+    public ListNode merge(ListNode[] lists, int l, int r) {
+        if (l == r) {
+            return lists[l];
+        }
+        if (l > r) {
+            return null;
+        }
+        int mid = (r + l) / 2;
+        return mergeTwoLists(merge(lists, l, mid), merge(lists, mid + 1, r));
+    }
+
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode head = new ListNode();
+        ListNode tail = head;
+        int a1 = 0, a2 = 0;
+        while (l1 != null || l2 != null) {
+            a1 = l1 == null ? Integer.MAX_VALUE : l1.val;
+            a2 = l2 == null ? Integer.MAX_VALUE : l2.val;
+            if (a1 <= a2 && a1 != Integer.MAX_VALUE) {
+                tail.next = new ListNode(a1);
                 l1 = l1.next;
             } else {
-                prev.next = l2;
+                tail.next = new ListNode(a2);
                 l2 = l2.next;
             }
-            prev = prev.next;
+            tail = tail.next;
         }
-
-        // 合并后 l1 和 l2 最多只有一个还未被合并完，我们直接将链表末尾指向未合并完的链表即可
-        prev.next = l1 == null ? l2 : l1;
-        return prehead.next;
+        return head.next;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

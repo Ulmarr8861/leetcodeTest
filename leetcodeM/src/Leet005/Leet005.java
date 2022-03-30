@@ -1,4 +1,4 @@
-package leet005;
+package Leet005;
 
 public class Leet005 {
     public static void main(String[] args) {

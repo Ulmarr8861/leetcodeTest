@@ -42,43 +42,35 @@
 // Related Topics 字符串 动态规划 👍 4278 👎 0
 
 
+
+
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 
     public String longestPalindrome(String s) {
-        char[] charArray = s.toCharArray();
-        int charArrayLength = charArray.length;
-        int left, right;
-        int maxLength =0;
-        int len;
-        int startLength = 0;
-        for (int i = 0; i < charArrayLength; i++) {
-            left = i - 1;
-            right = i + 1;
-            if (i == 0) {
-                while (right < charArrayLength && charArray[i] == charArray[right]) {
-                    right++;
-                }
-                maxLength = right;
-                continue;
-            }
-            while (left >= 0 && charArray[left] == charArray[i]) {
-                left--;
-            }
-            while (right < charArrayLength && charArray[right] == charArray[i]) {
-                right++;
-            }
-            while (left >= 0 && right < charArrayLength && charArray[left] == charArray[right]) {
-                left--;
-                right++;
-            }
-            len = right - left - 1;
-            if (len >= maxLength) {
-                maxLength = len;
-                startLength = left + 1;
+        if (s == null || s.length() < 1) {
+            return "";
+        }
+        int start = 0, end = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int len1 = expandAroundCenter(s, i, i);
+            int len2 = expandAroundCenter(s, i, i + 1);
+            int len = Math.max(len1, len2);
+            if (len > end - start) {
+                start = i - (len - 1) / 2;
+                end = i + len / 2;
             }
         }
-        return s.substring(startLength, startLength + maxLength);
+        return s.substring(start, end + 1);
+    }
+
+    private int expandAroundCenter(String s, int left, int right) {
+        int L = left, R = right;
+        while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
+            L--;
+            R++;
+        }
+        return R - L - 1;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

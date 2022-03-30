@@ -6,6 +6,10 @@ import java.util.LinkedList;
 import java.util.Map;
 
 public class Leet020 {
+    public static void main(String[] args) {
+        Boolean a = new Leet020().method01("()[]{}");
+        System.out.println(a);
+    }
     public Boolean method01(String s) {
         int length = s.length();
         if (length % 2 == 1) {

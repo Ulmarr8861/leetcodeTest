@@ -54,35 +54,32 @@
 // Related Topics 栈 字符串 👍 2751 👎 0
 
 
+ import java.util.ArrayDeque;
  import java.util.Deque;
  import java.util.HashMap;
- import java.util.LinkedList;
  import java.util.Map;
 
  //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public boolean isValid(String s) {
-        int length = s.length();
-        if (length % 2 == 1) {
-            return false;
-        }
-        Deque<Character> stack = new LinkedList<>();
-        Map<Character, Character> map = new HashMap<>();
-        map.put(')', '(');
-        map.put(']', '[');
-        map.put('}', '{');
-        for (int i = 0; i < length; i++) {
-            Character cur = s.charAt(i);
-            if (map.containsKey(cur)) {
-                if (stack.isEmpty()  || stack.peek() != map.get(cur)) {
-                    return false;
-                }
-                stack.pop();
-            }else{
-                stack.push(cur);
-            }
-        }
-        return stack.isEmpty();
-    }
+     public boolean isValid(String s) {
+         Deque<Character> deque = new ArrayDeque<>();
+         Map<Character,Character> map  = new HashMap<>();
+         map.put(')', '(');
+         map.put(']','[');
+         map.put('}','{');
+
+         for(int i = 0; i < s.length(); i++){
+             Character cur = s.charAt(i);
+             if (map.containsKey(cur)) {
+                 if (deque.isEmpty()||!deque.peek().equals(map.get(cur))) {
+                     return false;
+                 }
+                 deque.pop();
+             } else {
+                 deque.push(cur);
+             }
+         }
+         return deque.isEmpty();
+     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
