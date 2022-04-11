@@ -1,3 +1,5 @@
+package 排序;
+
 public class 选择排序 {
     public static void main(String[] args) {
         method(new int[]{3, 9, -1, 10, 20});

@@ -1,3 +1,5 @@
+package 排序;
+
 import java.util.Arrays;
 
 public class 归并排序 {

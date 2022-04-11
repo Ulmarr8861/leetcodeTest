@@ -1,3 +1,5 @@
+package 排序;
+
 public class 快速排序 {
     public static void quickSort(int[] arr,int left,int right){
         int l = left;
@@ -85,6 +87,8 @@ public class 快速排序 {
             quickSort(arr, l, right);
         }
     }
+
+
 
         public static void main(String[] args){
         int[] arr = {10,7,2,4,7,62,3,4,2,1,8,9,19};
