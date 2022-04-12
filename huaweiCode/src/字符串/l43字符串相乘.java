@@ -15,7 +15,7 @@ public class l43字符串相乘 {
 
         int tmp = 0;
         int res = 0;
-        int[][] dp = new int[2][2];
+        int[][] dp = new int[][]{{3,5,3},{7,2,5},{3,5,1}};
         Arrays.sort(dp,(v1,v2)->
         {if (v1[0]==v2[0]){return v1[1]-v2[1];}
             return v1[0]-v2[0];}
