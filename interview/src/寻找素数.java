@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class 素数 {
+public class 寻找素数 {
     public ArrayList<Integer> findPrimeNumber (int m, int n) {
         // write code here
         ArrayList<Integer> ans = new ArrayList<>();
