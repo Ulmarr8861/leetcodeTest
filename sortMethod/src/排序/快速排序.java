@@ -51,41 +51,7 @@ public class 快速排序 {
 
 
     public static void quickSort2(int[] arr,int left,int right) {
-        int l = left, r = right;
-        int tmp = 0;
-        int pivot = arr[(left + right) / 2];
-        while (l < r) {
-            while (arr[l] < pivot) {
-                l++;
-            }
-            while (arr[r] > pivot) {
-                r--;
-            }
-            if (l >= r) {
-                break;
-            }
-            tmp = arr[l];
-            arr[l] = arr[r];
-            arr[r] = tmp;
 
-            if (arr[l] == pivot) {
-                r--;
-            }
-            if (arr[r] == pivot) {
-                l++;
-            }
-        }
-
-        if (l == r) {
-            l++;
-            r--;
-        }
-        if (left < r) {
-            quickSort(arr, left, r);
-        }
-        if (right > l) {
-            quickSort(arr, l, right);
-        }
     }
 
 
