@@ -1,6 +1,31 @@
 package 排序;
 
 public class 快速排序 {
+    //https://blog.csdn.net/weixin_43586713/article/details/119820797
+    public static void quickSort2(int[] nums, int start, int end){
+        if(start>end) return;
+        int i,j,base;
+        i=start;
+        j=end;
+        base=nums[start];
+        while (i<j){
+            while (i<j && nums[j]>=base) j--;
+            while (i<j && nums[i]<=base) i++;
+            if(i<j){
+                swap(nums,i,j);
+            }
+        }
+        swap(nums,start,i);
+        quickSort(nums,start,j-1);
+        quickSort(nums,j+1,end);
+    }
+    public static void swap(int[] nums,int left,int right){
+        int temp=nums[left];
+        nums[left]=nums[right];
+        nums[right]=temp;
+    }
+
+
     public static void quickSort(int[] arr,int left,int right){
         int l = left;
         int r = right;
@@ -50,9 +75,7 @@ public class 快速排序 {
     }
 
 
-    public static void quickSort2(int[] arr,int left,int right) {
 
-    }
 
 
 
