@@ -47,11 +47,11 @@
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * int val;
+ * ListNode next;
+ * ListNode() {}
+ * ListNode(int val) { this.val = val; }
+ * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
@@ -65,18 +65,19 @@ class Solution {
             n1 = l1 == null ? 0 : l1.val;
             n2 = l2 == null ? 0 : l2.val;
 
-            pre.next = new ListNode((n1 + n2+ helper) % 10 );
-            helper = (n1 + n2+ helper) / 10;
+            pre.next = new ListNode(((n1 + n2) % 10 + helper)%10);
+            helper = (n1 + n2 + helper) / 10;
             if (l1 != null) {
                 l1 = l1.next;
             }
             if (l2 != null) {
                 l2 = l2.next;
             }
+
             pre = pre.next;
-        }
-        if (helper > 0) {
-            pre.next = new ListNode(helper);
+            if (helper != 0) {
+                pre.next = new ListNode(helper);
+            }
         }
         return result.next;
     }
