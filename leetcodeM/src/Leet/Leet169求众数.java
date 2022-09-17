@@ -10,5 +10,4 @@ public class Leet169求众数 {
         return nums[nums.length / 2];
     }
 
-
 }
